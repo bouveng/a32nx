@@ -82,6 +82,10 @@
       {
         "gltf": "./inop/inop.gltf",
         "bin": "./inop/inop.bin"
+      },
+      {
+        "gltf": "./post-it/post-it.gltf",
+        "bin": "./post-it/post-it.bin"
       }
     ],
     "modifications": [

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Caveat";
+  src: url("/Fonts/Caveat-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+livery-postit-element {
+  background: rgba(255, 211, 14, 0.5);
+}
+
+#text {
+  padding: 3.5rem;
+  font-family: "Caveat", sans-serif;
+  line-height: 1.1;
+  background: url('https://media.discordapp.net/attachments/919791965539815425/922658963374346270/post-it-alt.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 100px;
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-wrap: break-word;
+  max-width: 1024px;
+  max-height: 1024px;
+}
+
+#outline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 16px solid #00e0fe;
+  display: none;
+  pointer-events: none;
+}
+
+#text::selection {
+  background: black;
+  color: white;
+}

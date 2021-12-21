@@ -5,41 +5,95 @@
   font-style: normal;
 }
 
-livery-postit-element {
-  background: rgba(255, 211, 14, 0.5);
+@font-face {
+    font-family: "Marker";
+    src: url("/Fonts/PermanentMarker-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gochi";
+    src: url("/Fonts/GochiHand-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "RockSalt";
+    src: url("/Fonts/RockSalt-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kalam";
+    src: url("/Fonts/Kalam-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 #text {
   padding: 3.5rem;
-  font-family: "Caveat", sans-serif;
+  background-image: url("/Images/PostIT/postit-bg.png");
+  background-color: rgb(255,255,151);
+  background-blend-mode: multiply;
+  font-family: "Caveat";
   line-height: 1.1;
-  background: url('https://media.discordapp.net/attachments/919791965539815425/922658963374346270/post-it-alt.png');
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 100px;
   color: #000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  width: 1024px;
+  height: 1024px;
   overflow-wrap: break-word;
-  max-width: 1024px;
-  max-height: 1024px;
 }
 
-#outline {
+#invis {
+  padding: 3.5rem;
+  font-family: "Caveat", sans-serif;
+  line-height: 1.1;
+  font-size: 100px;
   position: absolute;
+  overflow-wrap: break-word;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
-  border: 16px solid #00e0fe;
-  display: none;
   pointer-events: none;
+  visibility: hidden;
 }
 
 #text::selection {
   background: black;
   color: white;
+}
+
+#taskbar {
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    bottom: 20px;
+    right: 20px;
+    z-index: 120;
+}
+
+#typography {
+  width: 75px;
+  height: 75px;
+  stroke: black;
+}
+
+#palette {
+  width: 75px;
+  height: 75px;
+  stroke: black;
+}
+
+#pencil {
+  width: 75px;
+  height: 75px;
+  stroke: black;
 }

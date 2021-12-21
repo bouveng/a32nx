@@ -68,6 +68,7 @@ class PostIT extends BaseInstrument {
 
         this.typographyIcon.addEventListener("click", () => {
             setProperties(this.fonts, "fontFamily", null, "POSTIT_FONT");
+            this.invisElem.style.fontFamily = this.textElem.style.fontFamily;
         });
 
         this.textElem.addEventListener("input", () => {
